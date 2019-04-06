@@ -1,4 +1,4 @@
-# Installation/Setup
+# Installation/Setup:
 - You need to install nodejs 10
 - then run
 ```
@@ -10,12 +10,19 @@ npm run run
 - year
 - type
 
-#And these are optional:
+#And these are optional for new movie:
 - author
 - genre
 - plot
 
-# Technolgies used
+#To add a new comment you need to add:
+- text
+
+#And these are optional:
+- author
+- title
+
+# Technolgies used:
 - expressjs
 - mongodb
 - joi

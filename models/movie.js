@@ -30,8 +30,7 @@ const Movie = mongoose.model('Movie', new mongoose.Schema({
         type: Array,
         trim: true,
         minlength: 3,
-        maxlength: 255,
-        default: "Unknown" 
+        maxlength: 255
     },
     plot: {
         type: String,
@@ -49,7 +48,7 @@ function validate(movie) {             //This function is used for validation of
         author: Joi.string().min(3).max(255),
         genre: Joi.string().min(3).max(255),
         type: Joi.string().required().valid(["movie", "series", "episode"]),
-        year: Joi.number().required().max(4).min(4),
+        year: Joi.number().required().min(1900),
         plot: Joi.string().min(5).max(2500)
     };
     return Joi.validate(movie, schema);

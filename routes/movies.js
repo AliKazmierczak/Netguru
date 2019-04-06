@@ -1,10 +1,6 @@
 const express= require('express');
 const router = express.Router();
-const mongoose = require('mongoose');
 const {Movie, validate} = require('../models/movie');
-
-const ObjectId = mongoose.Types.ObjectId;
-
 
 router.get('/', async (req,res)=>{                  //This function returns all existing movies at '/api/movie'
     const movies = await Movie

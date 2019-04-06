@@ -3,8 +3,17 @@
 - then run
 ```
 npm install
-npm run dev-run or npm run run
+npm run run 
 ```
+#To add a new movie these positions are required:
+- title
+- year
+- type
+
+#And these are optional:
+- author
+- genre
+- plot
 
 # Technolgies used
 - expressjs

@@ -9,18 +9,6 @@ const Movie = mongoose.model('Movie', new mongoose.Schema({
         minlength: 3,
         maxlength: 255
     },
-    author:{
-        type: String,
-        trim: true,
-        minlength: 3,
-        maxlength: 255     
-    },
-    genre:{
-        type: Array,
-        trim: true,
-        minlength: 3,
-        maxlength: 255
-    },
     type: {
         type: String,
         required: true,
@@ -30,6 +18,20 @@ const Movie = mongoose.model('Movie', new mongoose.Schema({
         type: Number,
         required: true,
         length:4
+    },
+    author:{
+        type: String,
+        trim: true,
+        minlength: 3,
+        maxlength: 255,
+        default: "Unknown"     
+    },
+    genre:{
+        type: Array,
+        trim: true,
+        minlength: 3,
+        maxlength: 255,
+        default: "Unknown" 
     },
     plot: {
         type: String,

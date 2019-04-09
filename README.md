@@ -4,11 +4,11 @@
 This is an API for viewing and posting movies and comments
 
 ## Table of contents
-* Installation/Setup [#Installation/Setup]
-* Usage [#Usage]
-* Technologies [#Technologies used]
-* Creator [#Creator]
-* End notes [#End notes]
+* [Installation/Setup] (#Installation/Setup)
+* [Usage] (#Usage)
+* [Technologies] (#Technologies used)
+* [Creator] (#Creator)
+* [End notes] (#End notes)
 
 # Installation/Setup:
 - You need to install nodejs 10
@@ -48,7 +48,7 @@ To add a new comment you need to add:
 - author
 - title
 
-## Technolgies used:
+## Technolgies used
 - expressjs
 - mongodb
 - joi
@@ -62,5 +62,5 @@ To add a new comment you need to add:
 | ------------------- |
 | **Alicja Kaźmierczak** |
 
-## End notes:
+## End notes
 I am aware that the tests were very simple, sadly for the time being I don't know how to write other. I should be able to learn writing more complex ones in about a month time.

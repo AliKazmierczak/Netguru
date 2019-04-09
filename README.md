@@ -30,12 +30,12 @@ This is an API for viewing and posting movies and comments
 Allows to add new movies to the DB. 
 Additionally, the module doesn't allow for copies of the same movie/series/episode to be posted.
 
-### Properties required to POST a new movie:
+#### Properties required to POST a new movie:
 - title
 - year (of release)
 - type (either: movie, series or episode)
 
-### Optional properties:
+#### Optional properties:
 - author
 - genre (possible to pick multiple - this is an array)
 - plot
@@ -46,10 +46,10 @@ Pulls the list of movies from the DB.
 ## POST /Comments
 Allows to add new comments to the DB.
 
-### Properties required to POST a new comment:
+#### Properties required to POST a new comment:
 - text
 
-### Optional properties:
+#### Optional properties:
 - author
 - title
 

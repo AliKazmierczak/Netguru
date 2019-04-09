@@ -29,4 +29,8 @@ Additionally, the module doesn't allow for copies of the same movie/series/episo
 - mongodb
 - joi
 - jest
+- supertest
 - nodemon (optional)
+
+# Notes:
+I am aware that the tests were very simple, sadly for the time being I don't know how to write other. I should be able to learn writing more complex ones in about a month time.

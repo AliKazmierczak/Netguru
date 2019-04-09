@@ -4,7 +4,7 @@
   "description": "a simple REST API created for application test",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watchAll --verbose",
     "run": "node index.js",
     "dev-run": "./node_modules/nodemon/bin/nodemon.js index.js"
   },
@@ -22,6 +22,7 @@
     "nodemon": "^1.18.10"
   },
   "devDependencies": {
-    "jest": "^24.7.1"
+    "jest": "^24.7.1",
+    "supertest": "^4.0.2"
   }
 }

@@ -48,7 +48,7 @@ function validate(movie) {             //This function is used for validation of
         author: Joi.string().min(3).max(255),
         genre: Joi.string().min(3).max(255),
         type: Joi.string().required().valid(["movie", "series", "episode"]),
-        year: Joi.number().required().min(1900),
+        year: Joi.number().required().min(1900).max(2050),
         plot: Joi.string().min(5).max(2500)
     };
     return Joi.validate(movie, schema);

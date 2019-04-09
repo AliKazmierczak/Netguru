@@ -1,9 +1,9 @@
 # Simple API
 
-#Description
+# Description
 This is an API for viewing and posting movies and comments
 
-## Table of contents
+# Table of contents
     * Installation/Setup
     * Usage
     * Technologies

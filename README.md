@@ -26,12 +26,7 @@ This is an API for viewing and posting movies and comments
     ```
 # Usage 
 
-## /Movies
-
-### GET
-Pulls the list of movies from the DB.
-
-### POST
+## POST /Movies
 Allows to add new movies to the DB. 
 Additionally, the module doesn't allow for copies of the same movie/series/episode to be posted.
 
@@ -45,13 +40,10 @@ Additionally, the module doesn't allow for copies of the same movie/series/episo
 - genre (possible to pick multiple - this is an array)
 - plot
 
+## GET /Movies
+Pulls the list of movies from the DB.
 
-## /Comments
-
-### GET
-Pulls the list of comments from the DB.
-
-### POST
+## POST /Comments
 Allows to add new comments to the DB.
 
 ### Properties required to POST a new comment:
@@ -60,6 +52,9 @@ Allows to add new comments to the DB.
 ### Optional properties:
 - author
 - title
+
+## GET /Comments
+Pulls the list of comments from the DB.
 
 # Technolgies used:
 - expressjs

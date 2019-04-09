@@ -4,26 +4,26 @@
 This is an API for viewing and posting movies and comments
 
 ## Table of contents
-* [Installation/Setup] (#Installation/Setup)
-* [Usage] (#Usage)
-* [Technologies] (#Technologies used)
-* [Creator] (#Creator)
-* [End notes] (#End notes)
+    * Installation/Setup
+    * Usage
+    * Technologies
+    * Creator
+    * End notes
 
 # Installation/Setup:
-- You need to install nodejs 10
-- then run
-```
-npm install
-```
-- for tests run
-```
-npm test
-```
-- for the application run
-```
-npm run run 
-```
+    - You need to install nodejs 10
+    - then run
+    ```
+    npm install
+    ```
+    - for tests run
+    ```
+    npm test
+    ```
+    - for the application run
+    ```
+    npm run run 
+    ```
 ## Usage 
 
 #Movies

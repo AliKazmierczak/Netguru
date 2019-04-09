@@ -1,11 +1,33 @@
+# Simple API for Netguru
+
+#Description
+This is an API for viewing and posting movies and comments
+
+## Table of contents
+* Installation/Setup [#Installation/Setup]
+* Usage [#Usage]
+* Technologies [#Technologies used]
+* Creator [#Creator]
+* End notes [#End notes]
+
 # Installation/Setup:
 - You need to install nodejs 10
 - then run
 ```
 npm install
+```
+- for tests run
+```
+npm test
+```
+- for the application run
+```
 npm run run 
 ```
-#To add a new movie these positions are required:
+## Usage 
+
+#Movies
+
 - title
 - year (of release)
 - type (either: movie, series or episode)
@@ -17,14 +39,16 @@ npm run run
 
 Additionally, the module doesn't allow for copies of the same movie/series/episode to be posted, by checking title, year and type.
 
-#To add a new comment you need to add:
+#Comments
+
+To add a new comment you need to add:
 - text
 
 #And these are optional for new comment:
 - author
 - title
 
-# Technolgies used:
+## Technolgies used:
 - expressjs
 - mongodb
 - joi
@@ -32,5 +56,11 @@ Additionally, the module doesn't allow for copies of the same movie/series/episo
 - supertest
 - nodemon (optional)
 
-# Notes:
+## Creator
+
+| Name                |
+| ------------------- |
+| **Alicja Kaźmierczak** |
+
+## End notes:
 I am aware that the tests were very simple, sadly for the time being I don't know how to write other. I should be able to learn writing more complex ones in about a month time.

@@ -8,12 +8,12 @@ describe('/comments `GET`', () => {
         const comment = Comment;
 
         request(router)
-        .get('/')
+        .get('/comments')
         .expect(comment)
     });
 });
 
-describe('/movies `POST`', () => {
+describe('/comments `POST`', () => {
     it('when data is valid the module should post a new comment and add it to DB', () => {
         let comment = new Comment({                 
             title: 'Tytuł',
@@ -21,41 +21,41 @@ describe('/movies `POST`', () => {
             text: 'Text'
         });
         request(router)
-        .post('/')
+        .post('/comments')
         .expect(comment)
     });
 });
 
-describe('/movies `POST`', () => {
+describe('/comments `POST`', () => {
     it('when only text is added the module should post a new comment and add it to DB', () => {
         let comment = new Comment({                 
             text: 'Text'
         });
         request(router)
-        .post('/')
+        .post('/comments')
         .expect(comment)
     });
 });
 
-describe('/movies `POST`', () => {
+describe('/comments `POST`', () => {
     it('when nothing is added the module should return status 400', () => {
         let comment = new Comment({                 
             text: ''
         });
         request(router)
-        .post('/')
+        .post('/comments')
         .expect(400)
     });
 });
 
-describe('/movies `POST`', () => {
+describe('/comments `POST`', () => {
     it('when only title and author is added the module should return status 400', () => {
         let comment = new Comment({                 
             title: 'Tytuł',
             author: 'Author'
         });
         request(router)
-        .post('/')
+        .post('/comments')
         .expect(400)
     });
 });

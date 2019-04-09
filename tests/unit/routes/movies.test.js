@@ -8,7 +8,7 @@ describe('/movies `GET`', () => {
         const movies = Movie;
 
         request(router)
-        .get('/')
+        .get('/movies')
         .expect(movies)
     });
 });
@@ -24,7 +24,7 @@ describe('/movies `POST`', () => {
             plot: 'Plot'
         });
         request(router)
-        .post('/')
+        .post('/movies')
         .expect(movie)
     });
 
@@ -36,7 +36,7 @@ describe('/movies `POST`', () => {
 
         });
         request(router)
-        .post('/')
+        .post('/movies')
         .expect(movie)
     });
 
@@ -47,7 +47,7 @@ describe('/movies `POST`', () => {
 
         });
         request(router)
-        .post('/')
+        .post('/movies')
         .expect(400)
     });
 
@@ -57,7 +57,7 @@ describe('/movies `POST`', () => {
 
         });
         request(router)
-        .post('/')
+        .post('/movies')
         .expect(400)
     });
 
@@ -68,7 +68,7 @@ describe('/movies `POST`', () => {
             plot: 'Plot'
         });
         request(router)
-        .post('/')
+        .post('/movies')
         .expect(400)
     });
 
@@ -80,7 +80,7 @@ describe('/movies `POST`', () => {
 
         });
         request(router)
-        .post('/')
+        .post('/movies')
         .expect(400)
     });
 
@@ -92,7 +92,7 @@ describe('/movies `POST`', () => {
 
         });
         request(router)
-        .post('/')
+        .post('/movies')
         .expect(400)
     });
 });

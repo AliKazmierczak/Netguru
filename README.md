@@ -1,14 +1,13 @@
 # Simple API
 
 # Description
-This is an API for viewing and posting movies and comments
+This is a simple REST API for fetching movies from an external API, viewing them as well as posting and viewing comments.
 
 # Table of contents
     * Installation/Setup
     * Usage
     * Technologies
     * Creator
-    * End notes
 
 # Installation/Setup:
 - You need to install nodejs 10
@@ -24,21 +23,24 @@ This is an API for viewing and posting movies and comments
     ```
     npm run run 
     ```
+- optionally, for continuous run
+    ```
+     run dev-run
+    ```
 # Usage 
 
 ## POST /Movies
-Allows to add new movies to the DB. 
+Fetches a  movie/series/episode from OMDb API based on an offered phrase/title.
 Additionally, the module doesn't allow for copies of the same movie/series/episode to be posted.
 
 #### Properties required to POST a new movie:
-- title
+- title (or a phrase by which the REST API finds a movie/series/episode at OMDb API)
+
+#### If a position doesn't exist in the current DB the API will fetch and save a new position from OMDb API with properties:
+- title (full title based on the phrase supplied by the user)
 - year (of release)
 - type (either: movie, series or episode)
-
-#### Optional properties:
-- author
-- genre (possible to pick multiple - this is an array)
-- plot
+- poster (url)
 
 ## GET /Movies
 Pulls the list of movies from the DB.
@@ -62,7 +64,10 @@ Pulls the list of comments from the DB.
 - joi
 - jest
 - supertest
-- nodemon (optional)
+- axios
+- nodemon (optional for continuos run)
+- dotenv
+- babel
 
 ## Creator
 
@@ -70,8 +75,6 @@ Pulls the list of comments from the DB.
 | ------------------- |
 | **Alicja Kaźmierczak** |
 
-## End notes
-I am aware that the tests were very simple, sadly for the time being I don't know how to write other. I should be able to learn writing more complex ones in about a month time.
-I wasn't sure what properties there should be for /movies and hope that my choice is acceptable.
-I sincerly hope you will find this simple API passable.
-Thank you for your interest.
+# End notes
+Normally I'd add .env file in .gitignore and not include it in repository but as it is necessary to fully use this REST API, I made an exception and included this secret here.
+Unfortunatelly, after I added axios I wasn't sure how to make tests work, so those are unfinished.

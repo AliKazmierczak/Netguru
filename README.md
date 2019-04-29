@@ -21,7 +21,7 @@ This is a simple REST API for fetching movies from an external API, viewing them
     ```
 - for the application run
     ```
-    npm run run 
+    npm start 
     ```
 - optionally, for continuous run
     ```
